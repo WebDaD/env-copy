@@ -1,0 +1,29 @@
+{
+  "name": "env-copy",
+  "version": "1.0.0",
+  "description": "Simple CLI to copy artifacts from one enviroment to others",
+  "repository" :{ 
+      "type" : "git", 
+      "url" : "https://github.com/WebDaD/env-copy.git"
+  },
+  "bin": {
+    "ecopy": "cli.js",
+    "ecopy-config": "config.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "enviroment",
+    "copy"
+  ],
+  "author": "Dominik Sigmund",
+  "license": "Unlicense",
+  "dependencies": {
+    "mysqldump": "^1.4.2",
+    "node-mysql-importer": "0.0.10",
+    "npm": "^5.8.0",
+    "scp2": "^0.5.0"
+  }
+}

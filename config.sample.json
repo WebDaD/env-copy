@@ -1,0 +1,61 @@
+{
+	"cli": {
+		"tmp":"/tmp/"
+	},
+	"artifacts": {
+		"database": "mysql",
+		"config": "file",
+		"database-structure":"mysql-structure",
+		"images":"folder"
+	},
+	"enviroments": {
+		"live": {
+			"writable":false,
+			"artifacts": {
+				"database": {
+					"server":"",
+					"user":"",
+					"password":"",
+					"name":""
+				},
+				"database-structure":"database",
+				"config": {
+					"file":"/opt/mynode/config.json",
+					"server":"",
+					"user":"",
+					"password":""
+				},
+				"images":{
+					"folder":"/var/data/myimages/",
+					"server":"",
+					"user":"",
+					"password":""
+				}
+			}
+		},
+		"staging": {
+			"writable":true,
+			"artifacts": {
+				"database": {
+					"server":"",
+					"user":"",
+					"password":"",
+					"name":""
+				},
+				"database-structure":"database",
+				"config": {
+					"file":"/opt/mynode/config.json",
+					"server":"",
+					"user":"",
+					"password":""
+				},
+				"images":{
+					"folder":"/var/data/myimages/",
+					"server":"",
+					"user":"",
+					"password":""
+				}
+			}
+		}
+	}
+}
